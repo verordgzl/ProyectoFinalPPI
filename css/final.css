@@ -26,6 +26,7 @@ footer {
   font-size:1.5em;
 }
 
+/* LOGIN */
 .area_login
 {
     padding-top:70px;
@@ -36,6 +37,8 @@ footer {
 {
     color:#a72222;
     position:relative;
+    font-size: 18px;
+
 }
 
 .top_txt2
@@ -43,6 +46,7 @@ footer {
     color:#a72222;
     margin-bottom:54px;
     position:relative;
+    font-style: oblique;
 }
 
 .login_row
@@ -74,7 +78,7 @@ footer {
 {
     display: table-cell;
     border: 0px solid #FFF;
-    background-color: #CDCDCE;
+    background-color: #d6d6d6;
     width: 250px;
     height: 35px;
     color: #333333;
@@ -93,14 +97,9 @@ footer {
     text-align:left;
 }
 
-.log_button
-{
-    background-color: #d68002;
-    cursor: pointer;
-    border: none;
-    font-size: 14px;
-    width: 130px;
-    height: 43px;
-    margin-top:20px;
-    margin-bottom:50px;
+.error{
+  margin-top: -50px;
+  padding-bottom: 25px;
+  color: #ff0000;
+  font-size: 1.5em;
 }
