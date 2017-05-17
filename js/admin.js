@@ -1,17 +1,30 @@
-$(document).ready(function(){
-  $("#uno").click(function(){
-    $("#productos").toggle();
-  });
+var x;
+x = $(document);
+x.ready(inicializarEventos);
 
-  $("#dos").click(function(){
-    $("#historial").toggle();
-  });
+function inicializarEventos () {
+  $("#prod").hide();
+  $("#historial").hide();
+  $("#alta").hide();
+  $("#modificar").hide();
+  $("#uno").click(quitarProductos);
+  $("#dos").click(quitarHistorial);
+  $("#tres").click(quitarAltas);
+  $("#cuatro").click(quitarModificar);
+}
 
-  $("#tres").click(function(){
-    $("#alta").toggle();
-  });
+function quitarProductos() {
+  $("#prod").toggle(100);
+}
 
-  $("#cuatro").click(function(){
-    $("#modificar").toggle();
-  });
-});
+function quitarHistorial() {
+  $("#historial").toggle(100);
+}
+
+function quitarAltas() {
+  $("#alta").toggle(100);
+}
+
+function quitarModificar() {
+  $("#modificar").toggle(100);
+}
